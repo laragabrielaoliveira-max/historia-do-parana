@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-color: #aaaaaa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  background: rgb(180, 180, 180);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.passo {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.passo.ativo {
+  display: flex;
+}
+
+.passo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+button {
+  background-color: #00695c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
